@@ -43,7 +43,7 @@ describe('test/app/controller/users.test.js', () => {
       app.mockCsrf();
       const user = await app.factory.create('user');
       const res = await app.httpRequest().delete(`/users/${user.id}`);
-      assert(res.status === 200);
+      assert(res.status === 204);
     });
   });
 });
