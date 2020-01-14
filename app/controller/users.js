@@ -47,7 +47,7 @@ class UserController extends Controller {
       return;
     }
     await user.destory();
-    this.ctx.status = 200;
+    this.ctx.status = 204;
   }
 }
 
